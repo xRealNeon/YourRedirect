@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Redirector</title>
+</head>
+<style>
+    /* Theme */
+    :root {
+        --background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        --button-text: #ecf0f1;
+        --button-background: #2ecc71;
+        --button-background-hover: #27ae60;
+    }
+
+    body,
+    html {
+        font-family: 'Montserrat', sans-serif;
+        background: var(--background);
+        height: 100%;
+        display: grid;
+        overflow: hidden;
+    }
+
+    .center {
+        margin: auto;
+        text-align: center;
+    }
+
+    .button {
+        color: var(--button-text);
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: var(--button-background);
+        border: 2px solid var(--button-background);
+        border-radius: 5px;
+        transition: 0.3s;
+        font-size: 40px;
+        display: block;
+    }
+
+    .button:hover {
+        background-color: var(--button-background-hover);
+        border: 2px solid var(--button-background-hover);
+    }
+</style>
+
+<body>
+    <div class="center">
+        <a class="button" href="#">NodeRed</a><br>
+        <a class="button" href="#">NodeRed Dashboard</a><br>
+        <a class="button" href="#">ProxmoxVE</a><br>
+        <a class="button" href="#">OctoPrint</a><br>
+        <a class="button" href="#">PiHole</a><br>
+    </div>
+</body>
+
+</html>
